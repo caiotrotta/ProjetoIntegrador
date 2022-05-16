@@ -231,6 +231,11 @@ SQL;
 
 endif;
 
+// Atualiza contador de visualizações do artigo
+$views = intval($artigo['art_views']) + 1;
+$sql = "UPDATE articles SET art_views = '{$views}' WHERE art_id = '{$artigo['art_id']}'";
+$conn->query($sql);
+
 /************************************************
  * Seus códigos PHP desta página terminam aqui! *
  ************************************************/

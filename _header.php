@@ -20,9 +20,9 @@
 
         <header>
 
-            <a href="/" title="Página inicial"><i class="fa-solid fa-bowl-spoon fa-bl"></i></a>
+            <a href="/" title="Página inicial"><img src="/img/eco-food.png"></a>
 
-            <h1>Nutri Receitas</h1>
+            <h1>&nbsp;Nutri Receitas</h1>
 
         </header>
 
