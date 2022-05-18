@@ -79,16 +79,14 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
 <aside>
 
-    <h3>Receitas rápidas</h3>
-    <p><a href="/ler/?id=1">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=2">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=3">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=4">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=5">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=6">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=7">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=8">Bife acebolado com fritas</a></p>
-    <p><a href="/ler/?id=9">Bife acebolado com fritas</a></p>
+    <?php
+
+    // Obtém os artigos mais visitados para a variável $mv.
+    $mv = mostViewed(5);
+
+    // Se existem artigos mais visitados, exibe eles...
+    if ($mv) echo "<h3>Mais visitados</h3>{$mv}";
+    ?>
 
 </aside>
 

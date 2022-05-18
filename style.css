@@ -339,8 +339,8 @@ form button[onclick]:hover {
 
 form input:invalid,
 form textarea:invalid {
-    background: rgb(255, 207, 207);
-    border-bottom: 3px solid red;
+    /* background: rgb(255, 207, 207); */
+    /* border-bottom: 3px solid red; */
 }
 
 /* Marca campos válidos. */
