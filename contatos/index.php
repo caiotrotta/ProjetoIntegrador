@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") :
     // Recebe o campo 'email' do formulário, sanitiza e valida.
     $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
     if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-        $error .= '<li>Seu e-mail está inválido;</li>';
+        $error .= '<li>Seu e-mail é inválido;</li>';
 
     // Recebe o assunto, sanitiza e valida.
     $subject = trim(htmlspecialchars($_POST['subject']));
@@ -76,7 +76,7 @@ SQL;
         // Mensagem do e-mail
         $mail_message = <<<TXT
 
-Novo contato enviado para Vitugo:
+Novo contato enviado para Nutri Receitas:
 
  - Remetente: {$name}
  - E-mail: {$email}
@@ -97,7 +97,7 @@ TXT;
          * Usamos o '@' para ocultar mensagens de erro. 
          * MUITO CUIDADO AO USAR '@' DESTE MODO!!!
          */
-        @mail('admin@vitugo.com', 'Um contato foi enviado.', $mail_message);
+        @mail('admin@nutrireceitas.com', 'Um contato foi enviado.', $mail_message);
 
         $feedback = true;
 
@@ -129,7 +129,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
 <section>
 
-    <h2>Faça contato</h2>
+    <h2>Faça contato com nossa equipe.</h2>
 
     <?php
     // Se o cadastro foi finalizado com sucesso...
@@ -159,7 +159,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" name="contatos">
 
-            <p>Preencha todos os campos para entrar em contato com a equipe do Vitugo.</p>
+            <p>Preencha todos os campos para entrar em contato com a equipe Nutri Receitas.</p>
 
             <?php if ($error != '') echo '<div class="error">' . $error . '</div>'; ?>
 

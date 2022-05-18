@@ -79,8 +79,16 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
 <aside>
 
-    <h3>Lateral</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam corporis culpa consequatur iusto.</p>
+    <h3>Receitas rápidas</h3>
+    <p><a href="/ler/?id=1">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=2">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=3">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=4">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=5">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=6">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=7">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=8">Bife acebolado com fritas</a></p>
+    <p><a href="/ler/?id=9">Bife acebolado com fritas</a></p>
 
 </aside>
 
