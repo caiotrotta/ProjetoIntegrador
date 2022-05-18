@@ -1,0 +1,21 @@
+@import url(/style.css);
+
+
+.sobre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre h2{
+    text-align: center;
+}
+
+.sobre p{
+    text-align: center;
+}
+
+.sobre img{
+    width: 45%;
+    padding: 0px 0px 0px 0px;
+}

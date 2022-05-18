@@ -198,7 +198,7 @@ else
     $comment_form = false;
 
 // Se usuário comentou...
-if ($_SERVER["REQUEST_METHOD"] == "POST") :
+if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_COOKIE['user'])) :
 
     // Recebe o comentário e sanitiza
     $comment = trim(htmlspecialchars($_POST['comment']));
@@ -215,7 +215,7 @@ INSERT INTO comments (
     cmt_comment
 ) VALUES (
     '{$id}',
-    '{$artigo['user_id']}',
+    '{$user['user_id']}',
     '{$comment}'
 );
 
