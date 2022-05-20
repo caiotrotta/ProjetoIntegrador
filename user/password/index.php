@@ -57,7 +57,7 @@ SQL;
         // SQL para atualizar a senha.
         $sql = <<<SQL
 
-UPDATE users SET user_password = SHA1('{$password}')
+UPDATE users SET user_password = SHA1('{$newpassword}')
 WHERE user_id = '{$user['user_id']}'
         AND user_status = 'on';
 

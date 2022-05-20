@@ -9,14 +9,13 @@
 
 .sobre h2{
     text-align: center;
-}
-
-.sobre p{
-    text-align: center;
+    
 }
 
 .sobre img{
     width: 45%;
     height: 45%;
-    border:  auto;
+    padding: 55px 50px 55px 50px;
+    display: block;
+    margin: auto;
  }
